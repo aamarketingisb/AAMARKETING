@@ -30,7 +30,7 @@
             z-index: 1000;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center; /* Center content */
             padding: 1em 2em;
         }
         header img {
@@ -38,7 +38,7 @@
             height: auto;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em; /* Increased font size */
             background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -78,6 +78,16 @@
         .contact-info p, .social-media p {
             margin: 0;
         }
+        .contact-info p strong, .social-media a {
+            font-weight: bold;
+        }
+        .contact-info p a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .contact-info p a:hover {
+            text-decoration: underline;
+        }
         .social-media a {
             color: white;
             text-decoration: none;
@@ -86,6 +96,12 @@
         }
         .social-media a:hover {
             text-decoration: underline;
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
         .gallery img {
             max-width: 100%;
@@ -139,9 +155,11 @@
 </head>
 <body>
     <header>
-        <img src="https://blueworldcity.com/wp-content/uploads/2021/06/Blue-world-city-logo.png" alt="Blue World City Logo">
+        <!-- Removed top left logo image -->
+        <!-- <img src="https://blueworldcity.com/wp-content/uploads/2021/06/Blue-world-city-logo.png" alt="Blue World City Logo"> -->
         <h1>A.A Marketing</h1>
-        <img src="https://blueworldcity.com/wp-content/uploads/2022/06/main-gate-update95.jpg" alt="Main Gate Update" style="max-width: 150px; height: auto;">
+        <!-- Removed top right corner image -->
+        <!-- <img src="https://blueworldcity.com/wp-content/uploads/2022/06/main-gate-update95.jpg" alt="Main Gate Update" style="max-width: 150px; height: auto;"> -->
     </header>
 
     <section>
@@ -158,11 +176,11 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>Blue World City</li>
-            <li>Capital Smart City</li>
-            <li>Kingdom Valley</li>
-            <li>New Metro City, Gujar Khan/Rawalpindi</li>
-            <li>New Metro City Mandi Bahauddin</li>
+            <li><strong>Blue World City</strong></li>
+            <li><strong>Capital Smart City</strong></li>
+            <li><strong>Kingdom Valley</strong></li>
+            <li><strong>New Metro City, Gujar Khan/Rawalpindi</strong></li>
+            <li><strong>New Metro City Mandi Bahauddin</strong></li>
         </ul>
     </section>
 
@@ -225,14 +243,26 @@
         <p><strong>Answer:</strong> You can reach us through our contact information provided above.</p>
     </section>
 
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> <a href="tel:+9203331114042">(92) 0333-1114042</a></p>
+        <p><strong>Address:</strong> Office #10, First Floor, Khyber-01, G-15 Markaz Islamabad, Pakistan</p>
+    </section>
+
     <section class="social-media">
         <h2>Follow Us</h2>
-        <p>
-            <a href="https://www.Facebook.com/A.AMarketingISB" target="_blank" title="Facebook">Facebook</a> |
-            <a href="https://Youtube.com/@A.AMarketing" target="_blank" title="YouTube">YouTube</a> |
-            <a href="https://instagram.com/a.amarketingisb" target="_blank" title="Instagram">Instagram</a> |
-            <a href="http://X.com/AAMarketingISB" target="_blank" title="X">X</a>
-        </p>
+        <a href="https://www.facebook.com/A.AMarketingISB" target="_blank" title="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://youtube.com/@A.AMarketing" target="_blank" title="YouTube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+        <a href="https://instagram.com/a.amarketingisb" target="_blank" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="http://X.com/AAMarketingISB" target="_blank" title="X">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="X">
+        </a>
     </section>
 
     <footer>
